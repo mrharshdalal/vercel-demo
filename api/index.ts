@@ -1,5 +1,17 @@
-import {Request, Response} from "express";
+import express, {Request, Response} from "express";
 
-export default async (req:Request, res:Response) => {
-    res.json({name:"Harsh", email:"harsh@gmail.com"});
+// const app = express()
+// const port = process.env.PORT || 3000
+
+// app.get('/api', (req:Request, res:Response) => {
+//     console.log("helloooooo");
+//     return res.send("I'm here");
+// })
+
+// app.listen(port, ()=>{
+//     return console.log("successfully running on port");
+// })
+
+export default async (req:Request, res:Response)=>{
+    res.json({message:"hello i am here"});
 };
